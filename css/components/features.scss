@@ -1,5 +1,4 @@
 .features__list {
-  border: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
 }
@@ -7,4 +6,31 @@
 .features__item {
   width: 296px;
   margin: 0 auto;
+  margin-bottom: 74px;
+}
+
+.features__icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.features__desc {
+  text-align: center;
+}
+
+.features__subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+  color: $black;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: $gray;
 }
