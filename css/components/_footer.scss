@@ -19,6 +19,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &--social {
+    width: 300px;
+  }
 }
 
 .footer__title {
@@ -26,6 +30,7 @@
   color: #fff;
   font-size: 14px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .footer__text {

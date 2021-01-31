@@ -6,6 +6,12 @@
 .social__item {
   border: 1px solid #c6cacc;
   margin-right: 4px;
+
+  &--footer {
+    border: 2px solid #fff;
+  }
+  
+  
 }
 
 .social__fb {
