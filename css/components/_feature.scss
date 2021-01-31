@@ -1,25 +1,35 @@
-.features__list {
+.feature-section {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-.features__item {
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  // padding: 120px;
+}
+
+.feature__item {
   width: 296px;
   margin: 0 auto;
   margin-bottom: 74px;
+
+  &:nth-child(n+4) {
+    margin-bottom: 0;
+  }
 }
 
-.features__icon {
+.feature__icon {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
 }
 
-.features__desc {
+.feature__desc {
   text-align: center;
 }
 
-.features__subtitle {
+.feature__subtitle {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -28,7 +38,7 @@
   color: $black;
 }
 
-.features__text {
+.feature__text {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;

@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  border: 1px solid #c6cacc;
+  margin-right: 4px;
+}
+
+.social__fb {
+  padding: 11px 16px;
+}
+
+.social__tw {
+  padding: 13px 10px;
+}
+
+.social__in {
+  padding: 12px;
+}

@@ -1,0 +1,41 @@
+.footer {
+  background: $violet;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.footer__item {
+  text-align: center;
+  margin-right: 380px;
+
+  &:nth-child(2) {
+    margin-right: 180px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer__text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+  background: #313454;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}

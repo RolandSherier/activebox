@@ -1,5 +1,5 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css';
-@import 'https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap';
 * {
   box-sizing: border-box;
 }
@@ -77,11 +77,7 @@ footer {
 
 .container {
   margin: 0 auto;
-  width: 1170px;
-}
-
-.hero-section {
-  background: url("../img/dashboard.png") center center/cover no-repeat;
+  max-width: 1170px;
 }
 
 .header {
@@ -116,6 +112,10 @@ footer {
   margin-right: 0;
 }
 
+.hero-section {
+  background: url("../img/dashboard.png") center center/cover no-repeat;
+}
+
 .hero {
   margin: 0 auto;
   padding: 0 10%;
@@ -148,28 +148,36 @@ footer {
   background: #e84545;
 }
 
-.features__list {
+.feature-section {
+  display: flex;
+  align-items: center;
+}
+
+.feature__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.features__item {
+.feature__item {
   width: 296px;
   margin: 0 auto;
   margin-bottom: 74px;
 }
+.feature__item:nth-child(n+4) {
+  margin-bottom: 0;
+}
 
-.features__icon {
+.feature__icon {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
 }
 
-.features__desc {
+.feature__desc {
   text-align: center;
 }
 
-.features__subtitle {
+.feature__subtitle {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -178,13 +186,198 @@ footer {
   color: #2d3033;
 }
 
-.features__text {
+.feature__text {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   color: #6c7279;
 }
 
-.features-section {
-  padding: 120px 25px 125px;
+.photo__section {
+  margin-bottom: 101px;
+}
+
+.photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo__item {
+  width: calc(100% / 4);
+}
+
+.photo__link-elem {
+  width: 480px;
+  height: 350px;
+}
+
+.photo__link-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team__section {
+  margin-bottom: 101px;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  width: 270px;
+  height: 270px;
+  margin-right: 30px;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__item-elem {
+  width: 270px;
+  height: 270px;
+  margin-bottom: 30px;
+}
+
+.team__title {
+  margin-bottom: 16px;
+}
+
+.team__position {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #e84545;
+  margin-bottom: 29px;
+}
+
+.team__text {
+  margin-bottom: 30px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  border: 1px solid #c6cacc;
+  margin-right: 4px;
+}
+
+.social__fb {
+  padding: 11px 16px;
+}
+
+.social__tw {
+  padding: 13px 10px;
+}
+
+.social__in {
+  padding: 12px;
+}
+
+.testi__list {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.testi__item {
+  max-width: calc(100% / 2);
+}
+.testi__item:last-child {
+  background: #53354a;
+}
+
+.testi__item-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.testi__item-rect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #53354a;
+  min-height: 100%;
+}
+
+.rect__title {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 0 80px;
+}
+
+.rect__subtitle {
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 80px;
+}
+
+.testi-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.testi__title {
+  font-size: 28px;
+  font-weight: 300;
+  color: #2d3033;
+  margin-bottom: 15px;
+}
+
+.testi__subtitle {
+  margin-bottom: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer {
+  background: #3a3e64;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.footer__item {
+  text-align: center;
+  margin-right: 380px;
+}
+.footer__item:nth-child(2) {
+  margin-right: 180px;
+}
+.footer__item:last-child {
+  margin-right: 0;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer__text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+  background: #313454;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
 }
