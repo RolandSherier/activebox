@@ -43,4 +43,16 @@
   color: #fff;
   font-size: 14px;
   text-align: center;
+  padding: 29px 0;
+  
+
+  &__text {
+    color: $gray;
+    width: 312px;
+    margin: 0 auto;
+
+    &-item {
+      color: #fff;
+    }
+  }
 }
